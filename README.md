@@ -1,6 +1,6 @@
 # Advent of Code 2024 Solutions
 
-My set of solutions for [Advent of Code 2023](https://adventofcode.com/2024), written in Golang because _I want yet more practice_.
+My set of solutions for [Advent of Code 2024](https://adventofcode.com/2024), written in Golang because _I want yet more practice_.
 
 
 ## Running
