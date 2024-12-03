@@ -2,6 +2,7 @@ package main
 
 import (
 	"advent/solutions/d01hysteria"
+	"advent/solutions/d02rednosereports"
 	"flag"
 	"fmt"
 	"time"
@@ -15,6 +16,7 @@ func main() {
 
 	completed := []string{
 		"hysteria",
+		"rednosereports",
 	}
 	if *all {
 		previous := time.Now()
@@ -37,6 +39,10 @@ func RunChallenge(challenge string) string {
         input := "inputs/d01hysteria.txt"
 		A, B := d01hysteria.Run(input)
 		res = fmt.Sprintf("hysteria Results A: %s B: %s", A, B)
+	case "rednosereports", "2":
+        input := "inputs/d02rednosereports.txt"
+		A, B := d02rednosereports.Run(input)
+		res = fmt.Sprintf("rednosereports Results A: %s B: %s", A, B)
 
     }
 	return res
