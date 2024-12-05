@@ -1,7 +1,8 @@
 # Advent of Code 2024 Solutions
 
-My set of solutions for [Advent of Code 2024](https://adventofcode.com/2024), written in Golang because _I want yet more practice_.
+In search of wandering historians.
 
+My set of solutions for [Advent of Code 2024](https://adventofcode.com/2024), written in Golang because _I want yet more practice_.
 
 ## Running
 
@@ -9,7 +10,7 @@ My inputs from the challenges are all stored in the `inputs` directory, and at t
 
 To run a particular day (i.e. _?_, ...) use either the name or the day
 ```sh
-go run main.go -challenge ?
+go run main.go -challenge hysteria
 go run main.go -challenge 1
 ```
 
@@ -22,11 +23,11 @@ go run main.go -all
 
 Day | Challenge |Day | Challenge
 ----|-----------|----|----------
-1 | `` | 14 | ``
-2 | `` | 15 | ``
-3 | `` | 16 | ``
-4 | `` | 17 | ` `
-5 | `` | 18 | ` `
+1 | `hysteria` | 14 | ``
+2 | `rednosereports` | 15 | ``
+3 | `mullitover` | 16 | ``
+4 | `ceressearch` | 17 | ` `
+5 | `printqueue` | 18 | ` `
 6 | `` | 19 | ` `
 7 | `` | 20 | ` `
 8 | `` | 21 | ` `
