@@ -6,6 +6,8 @@ import (
 	"advent/solutions/d03mullitover"
 	"advent/solutions/d04ceressearch"
 	"advent/solutions/d05printqueue"
+	"advent/solutions/d06guardgallivant"
+	"advent/solutions/d07bridgerepair"
 	"flag"
 	"fmt"
 	"time"
@@ -23,6 +25,8 @@ func main() {
 		"mullitover",
 		"ceressearch",
 		"printqueue",
+		"guardgallivant",
+		"bridgerepair",
 	}
 	if *all {
 		previous := time.Now()
@@ -61,6 +65,14 @@ func RunChallenge(challenge string) string {
         input := "inputs/d05printqueue.txt"
 		A, B := d05printqueue.Run(input)
 		res = fmt.Sprintf("printqueue Results A: %s B: %s", A, B)
+	case "guardgallivant", "6":
+        input := "inputs/d06guardgallivant.txt"
+		A, B := d06guardgallivant.Run(input)
+		res = fmt.Sprintf("guardgallivant Results A: %s B: %s", A, B)
+	case "bridgerepair", "7":
+        input := "inputs/d07bridgerepair.txt"
+		A, B := d07bridgerepair.Run(input)
+		res = fmt.Sprintf("bridgerepair Results A: %s B: %s", A, B)
 
     }
 	return res
