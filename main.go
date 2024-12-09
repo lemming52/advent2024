@@ -8,6 +8,7 @@ import (
 	"advent/solutions/d05printqueue"
 	"advent/solutions/d06guardgallivant"
 	"advent/solutions/d07bridgerepair"
+	"advent/solutions/d08resonantcollinearity"
 	"flag"
 	"fmt"
 	"time"
@@ -27,6 +28,7 @@ func main() {
 		"printqueue",
 		"guardgallivant",
 		"bridgerepair",
+		"resonantcollinearity",
 	}
 	if *all {
 		previous := time.Now()
@@ -73,6 +75,10 @@ func RunChallenge(challenge string) string {
         input := "inputs/d07bridgerepair.txt"
 		A, B := d07bridgerepair.Run(input)
 		res = fmt.Sprintf("bridgerepair Results A: %s B: %s", A, B)
+	case "resonantcollinearity", "8":
+        input := "inputs/d08resonantcollinearity.txt"
+		A, B := d08resonantcollinearity.Run(input)
+		res = fmt.Sprintf("resonantcollinearity Results A: %s B: %s", A, B)
 
     }
 	return res
