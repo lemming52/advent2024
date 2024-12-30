@@ -10,6 +10,7 @@ import (
 	"advent/solutions/d07bridgerepair"
 	"advent/solutions/d08resonantcollinearity"
 	"advent/solutions/d09diskfragmenter"
+	"advent/solutions/d10hoofit"
 	"flag"
 	"fmt"
 	"time"
@@ -31,6 +32,7 @@ func main() {
 		"bridgerepair",
 		"resonantcollinearity",
 		"diskfragmenter",
+		"hoofit",
 	}
 	if *all {
 		previous := time.Now()
@@ -85,6 +87,10 @@ func RunChallenge(challenge string) string {
         input := "inputs/d09diskfragmenter.txt"
 		A, B := d09diskfragmenter.Run(input)
 		res = fmt.Sprintf("diskfragmenter Results A: %s B: %s", A, B)
+	case "hoofit", "10":
+        input := "inputs/d10hoofit.txt"
+		A, B := d10hoofit.Run(input)
+		res = fmt.Sprintf("hoofit Results A: %s B: %s", A, B)
 
     }
 	return res

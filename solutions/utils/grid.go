@@ -35,3 +35,7 @@ func All2DNeighbours(x, y, xMax, yMax int) [][]int {
 	}
 	return correct
 }
+
+func IsValidGridCoord(x, y, xMax, yMax int) bool {
+	return x >= 0 && y >= 0 && x <= xMax && y <= yMax
+}
